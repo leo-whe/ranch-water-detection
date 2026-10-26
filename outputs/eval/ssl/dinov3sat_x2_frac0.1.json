@@ -1,0 +1,11 @@
+{
+ "name": "dinov3sat_x2_frac0.1",
+ "weak_label": {
+  "obj_precision": 0.8124618204031765,
+  "obj_recall": 0.82501503307276,
+  "obj_F1": 0.8186903090659555,
+  "pixel_IoU": 0.8829800811550345
+ },
+ "nwi_recall_auto": 0.8571428571428571,
+ "n_objects_test_area": 2357
+}

@@ -1,0 +1,11 @@
+{
+ "name": "unet_v2",
+ "weak_label": {
+  "obj_precision": 0.9151154132539091,
+  "obj_recall": 0.7642814191220686,
+  "obj_F1": 0.8329248849572624,
+  "pixel_IoU": 0.8290384426665126
+ },
+ "nwi_recall_auto": 0.8095238095238095,
+ "n_objects_test_area": 1815
+}

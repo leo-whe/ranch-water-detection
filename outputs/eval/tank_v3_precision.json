@@ -1,0 +1,20 @@
+{
+ "0.35+": {
+  "n_reviewed": 48,
+  "tank": 40,
+  "no": 0,
+  "uncertain": 8,
+  "precision_strict": 0.833,
+  "precision_lenient": 1.0,
+  "n_detections_test_area": 1025
+ },
+ "0.25-0.35": {
+  "n_reviewed": 48,
+  "tank": 12,
+  "no": 9,
+  "uncertain": 27,
+  "precision_strict": 0.25,
+  "precision_lenient": 0.812,
+  "n_detections_test_area": 1265
+ }
+}

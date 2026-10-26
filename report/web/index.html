@@ -1,0 +1,397 @@
+<title>Hamilton County Stock Ponds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+.leaflet-image-layer,.leaflet-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane,.leaflet-pane>canvas,.leaflet-pane>svg,.leaflet-tile,.leaflet-tile-container,.leaflet-zoom-box{position:absolute;left:0;top:0}.leaflet-container{overflow:hidden}.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile{-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-user-drag:none}.leaflet-tile::selection{background:0 0}.leaflet-safari .leaflet-tile{image-rendering:-webkit-optimize-contrast}.leaflet-safari .leaflet-tile-container{width:1600px;height:1600px;-webkit-transform-origin:0 0}.leaflet-marker-icon,.leaflet-marker-shadow{display:block}.leaflet-container .leaflet-overlay-pane svg{max-width:none!important;max-height:none!important}.leaflet-container .leaflet-marker-pane img,.leaflet-container .leaflet-shadow-pane img,.leaflet-container .leaflet-tile,.leaflet-container .leaflet-tile-pane img,.leaflet-container img.leaflet-image-layer{max-width:none!important;max-height:none!important;width:auto;padding:0}.leaflet-container img.leaflet-tile{mix-blend-mode:plus-lighter}.leaflet-container.leaflet-touch-zoom{-ms-touch-action:pan-x pan-y;touch-action:pan-x pan-y}.leaflet-container.leaflet-touch-drag{-ms-touch-action:pinch-zoom;touch-action:none;touch-action:pinch-zoom}.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{-ms-touch-action:none;touch-action:none}.leaflet-container{-webkit-tap-highlight-color:transparent}.leaflet-container a{-webkit-tap-highlight-color:rgba(51,181,229,.4)}.leaflet-tile{filter:inherit;visibility:hidden}.leaflet-tile-loaded{visibility:inherit}.leaflet-zoom-box{width:0;height:0;-moz-box-sizing:border-box;box-sizing:border-box;z-index:800}.leaflet-overlay-pane svg{-moz-user-select:none}.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-shadow-pane{z-index:500}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}.leaflet-map-pane canvas{z-index:100}.leaflet-map-pane svg{z-index:200}.leaflet-vml-shape{width:1px;height:1px}.lvml{behavior:url(#default#VML);display:inline-block;position:absolute}.leaflet-control{position:relative;z-index:800;pointer-events:visiblePainted;pointer-events:auto}.leaflet-bottom,.leaflet-top{position:absolute;z-index:1000;pointer-events:none}.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}.leaflet-control{float:left;clear:both}.leaflet-right .leaflet-control{float:right}.leaflet-top .leaflet-control{margin-top:10px}.leaflet-bottom .leaflet-control{margin-bottom:10px}.leaflet-left .leaflet-control{margin-left:10px}.leaflet-right .leaflet-control{margin-right:10px}.leaflet-fade-anim .leaflet-popup{opacity:0;-webkit-transition:opacity .2s linear;-moz-transition:opacity .2s linear;transition:opacity .2s linear}.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{opacity:1}.leaflet-zoom-animated{-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0}svg.leaflet-zoom-animated{will-change:transform}.leaflet-zoom-anim .leaflet-zoom-animated{-webkit-transition:-webkit-transform .25s cubic-bezier(0,0,.25,1);-moz-transition:-moz-transform .25s cubic-bezier(0,0,.25,1);transition:transform .25s cubic-bezier(0,0,.25,1)}.leaflet-pan-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-tile{-webkit-transition:none;-moz-transition:none;transition:none}.leaflet-zoom-anim .leaflet-zoom-hide{visibility:hidden}.leaflet-interactive{cursor:pointer}.leaflet-grab{cursor:-webkit-grab;cursor:-moz-grab;cursor:grab}.leaflet-crosshair,.leaflet-crosshair .leaflet-interactive{cursor:crosshair}.leaflet-control,.leaflet-popup-pane{cursor:auto}.leaflet-dragging .leaflet-grab,.leaflet-dragging .leaflet-grab .leaflet-interactive,.leaflet-dragging .leaflet-marker-draggable{cursor:move;cursor:-webkit-grabbing;cursor:-moz-grabbing;cursor:grabbing}.leaflet-image-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane>svg path,.leaflet-tile-container{pointer-events:none}.leaflet-image-layer.leaflet-interactive,.leaflet-marker-icon.leaflet-interactive,.leaflet-pane>svg path.leaflet-interactive,svg.leaflet-image-layer.leaflet-interactive path{pointer-events:visiblePainted;pointer-events:auto}.leaflet-container{background:#ddd;outline-offset:1px}.leaflet-container a{color:#0078a8}.leaflet-zoom-box{border:2px dotted #38f;background:rgba(255,255,255,.5)}.leaflet-container{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:12px;font-size:.75rem;line-height:1.5}.leaflet-bar{box-shadow:0 1px 5px rgba(0,0,0,.65);border-radius:4px}.leaflet-bar a{background-color:#fff;border-bottom:1px solid #ccc;width:26px;height:26px;line-height:26px;display:block;text-align:center;text-decoration:none;color:#000}.leaflet-bar a,.leaflet-control-layers-toggle{background-position:50% 50%;background-repeat:no-repeat;display:block}.leaflet-bar a:focus,.leaflet-bar a:hover{background-color:#f4f4f4}.leaflet-bar a:first-child{border-top-left-radius:4px;border-top-right-radius:4px}.leaflet-bar a:last-child{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-bottom:none}.leaflet-bar a.leaflet-disabled{cursor:default;background-color:#f4f4f4;color:#bbb}.leaflet-touch .leaflet-bar a{width:30px;height:30px;line-height:30px}.leaflet-touch .leaflet-bar a:first-child{border-top-left-radius:2px;border-top-right-radius:2px}.leaflet-touch .leaflet-bar a:last-child{border-bottom-left-radius:2px;border-bottom-right-radius:2px}.leaflet-control-zoom-in,.leaflet-control-zoom-out{font:bold 18px 'Lucida Console',Monaco,monospace;text-indent:1px}.leaflet-touch .leaflet-control-zoom-in,.leaflet-touch .leaflet-control-zoom-out{font-size:22px}.leaflet-control-layers{box-shadow:0 1px 5px rgba(0,0,0,.4);background:#fff;border-radius:5px}.leaflet-control-layers-toggle{background-image:url(images/layers.png);width:36px;height:36px}.leaflet-retina .leaflet-control-layers-toggle{background-image:url(images/layers-2x.png);background-size:26px 26px}.leaflet-touch .leaflet-control-layers-toggle{width:44px;height:44px}.leaflet-control-layers .leaflet-control-layers-list,.leaflet-control-layers-expanded .leaflet-control-layers-toggle{display:none}.leaflet-control-layers-expanded .leaflet-control-layers-list{display:block;position:relative}.leaflet-control-layers-expanded{padding:6px 10px 6px 6px;color:#333;background:#fff}.leaflet-control-layers-scrollbar{overflow-y:scroll;overflow-x:hidden;padding-right:5px}.leaflet-control-layers-selector{margin-top:2px;position:relative;top:1px}.leaflet-control-layers label{display:block;font-size:13px;font-size:1.08333em}.leaflet-control-layers-separator{height:0;border-top:1px solid #ddd;margin:5px -10px 5px -6px}.leaflet-default-icon-path{background-image:url(images/marker-icon.png)}.leaflet-container .leaflet-control-attribution{background:#fff;background:rgba(255,255,255,.8);margin:0}.leaflet-control-attribution,.leaflet-control-scale-line{padding:0 5px;color:#333;line-height:1.4}.leaflet-control-attribution a{text-decoration:none}.leaflet-control-attribution a:focus,.leaflet-control-attribution a:hover{text-decoration:underline}.leaflet-attribution-flag{display:inline!important;vertical-align:baseline!important;width:1em;height:.6669em}.leaflet-left .leaflet-control-scale{margin-left:5px}.leaflet-bottom .leaflet-control-scale{margin-bottom:5px}.leaflet-control-scale-line{border:2px solid #777;border-top:none;line-height:1.1;padding:2px 5px 1px;white-space:nowrap;-moz-box-sizing:border-box;box-sizing:border-box;background:rgba(255,255,255,.8);text-shadow:1px 1px #fff}.leaflet-control-scale-line:not(:first-child){border-top:2px solid #777;border-bottom:none;margin-top:-2px}.leaflet-control-scale-line:not(:first-child):not(:last-child){border-bottom:2px solid #777}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-attribution,.leaflet-touch .leaflet-control-layers{box-shadow:none}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-layers{border:2px solid rgba(0,0,0,.2);background-clip:padding-box}.leaflet-popup{position:absolute;text-align:center;margin-bottom:20px}.leaflet-popup-content-wrapper{padding:1px;text-align:left;border-radius:12px}.leaflet-popup-content{margin:13px 24px 13px 20px;line-height:1.3;font-size:13px;font-size:1.08333em;min-height:1px}.leaflet-popup-content p{margin:17px 0;margin:1.3em 0}.leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-top:-1px;margin-left:-20px;overflow:hidden;pointer-events:none}.leaflet-popup-tip{width:17px;height:17px;padding:1px;margin:-10px auto 0;pointer-events:auto;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#333;box-shadow:0 3px 14px rgba(0,0,0,.4)}.leaflet-container a.leaflet-popup-close-button{position:absolute;top:0;right:0;border:none;text-align:center;width:24px;height:24px;font:16px/24px Tahoma,Verdana,sans-serif;color:#757575;text-decoration:none;background:0 0}.leaflet-container a.leaflet-popup-close-button:focus,.leaflet-container a.leaflet-popup-close-button:hover{color:#585858}.leaflet-popup-scrolled{overflow:auto}.leaflet-oldie .leaflet-popup-content-wrapper{-ms-zoom:1}.leaflet-oldie .leaflet-popup-tip{width:24px;margin:0 auto}.leaflet-oldie .leaflet-control-layers,.leaflet-oldie .leaflet-control-zoom,.leaflet-oldie .leaflet-popup-content-wrapper,.leaflet-oldie .leaflet-popup-tip{border:1px solid #999}.leaflet-div-icon{background:#fff;border:1px solid #666}.leaflet-tooltip{position:absolute;padding:6px;background-color:#fff;border:1px solid #fff;border-radius:3px;color:#222;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none;box-shadow:0 1px 3px rgba(0,0,0,.4)}.leaflet-tooltip.leaflet-interactive{cursor:pointer;pointer-events:auto}.leaflet-tooltip-bottom:before,.leaflet-tooltip-left:before,.leaflet-tooltip-right:before,.leaflet-tooltip-top:before{position:absolute;pointer-events:none;border:6px solid transparent;background:0 0;content:""}.leaflet-tooltip-bottom{margin-top:6px}.leaflet-tooltip-top{margin-top:-6px}.leaflet-tooltip-bottom:before,.leaflet-tooltip-top:before{left:50%;margin-left:-6px}.leaflet-tooltip-top:before{bottom:0;margin-bottom:-12px;border-top-color:#fff}.leaflet-tooltip-bottom:before{top:0;margin-top:-12px;margin-left:-6px;border-bottom-color:#fff}.leaflet-tooltip-left{margin-left:-6px}.leaflet-tooltip-right{margin-left:6px}.leaflet-tooltip-left:before,.leaflet-tooltip-right:before{top:50%;margin-top:-6px}.leaflet-tooltip-left:before{right:0;margin-right:-12px;border-left-color:#fff}.leaflet-tooltip-right:before{left:0;margin-left:-12px;border-right-color:#fff}@media print{.leaflet-control{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+/* Layout: one reading column (~68ch) with the map and figures breaking out to a wider frame */
+:root{
+  --bg:#f2f4f1; --surface:#ffffff; --fg:#1b2320; --muted:#5b6862; --line:#d5dcd7;
+  --water:#0d6f6a; --tank:#b4307a; --dry:#a8661d; --new:#3a62b0; --mixed:#7d6f86; --bad:#b0412c;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111816; --surface:#18211e; --fg:#e2e9e5; --muted:#9aa9a2; --line:#2d3a35;
+  --water:#4cb7ad; --tank:#f08cc0; --dry:#d9a24e; --new:#7c9be0; --mixed:#b2a3bd; --bad:#e27a62; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111816; --surface:#18211e; --fg:#e2e9e5; --muted:#9aa9a2; --line:#2d3a35;
+  --water:#4cb7ad; --tank:#f08cc0; --dry:#d9a24e; --new:#7c9be0; --mixed:#b2a3bd; --bad:#e27a62; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.65;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+.wrap{max-width:1180px;margin:0 auto}
+.col{max-width:70ch}
+h1,h2,h3{font-family:var(--display);font-stretch:85%;text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:clamp(2rem,5vw,3.3rem);font-weight:800;letter-spacing:-.01em}
+h2{font-size:1.6rem;font-weight:750;margin-top:8px}
+h3{font-size:1.1rem;font-weight:700}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+header{padding-block:48px 28px;display:grid;gap:14px;border-bottom:1px solid var(--line)}
+header .lede{font-size:1.1rem;color:var(--muted);max-width:68ch}
+section{display:grid;gap:16px;padding-block:40px 8px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px}
+.stat{background:var(--surface);padding:16px 18px;display:grid;gap:2px;align-content:start}
+.stat b{font-family:var(--display);font-stretch:80%;font-size:2rem;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.1}
+.stat span{font-size:.85rem;color:var(--muted);line-height:1.4}
+@media (max-width:720px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* map */
+.mapbox{display:grid;grid-template-columns:minmax(0,1fr) 270px;border:1px solid var(--line);background:var(--surface)}
+#map{height:min(640px,72vh);min-height:380px;background:var(--bg)}
+.panel{padding:16px;display:grid;gap:16px;align-content:start;border-left:1px solid var(--line);font-size:.9rem}
+@media (max-width:820px){.mapbox{grid-template-columns:minmax(0,1fr)}.panel{border-left:0;border-top:1px solid var(--line)}}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--bg);color:var(--fg);
+  padding:4px 10px;border-radius:999px;font:500 .8rem var(--body);cursor:pointer}
+.chip[aria-pressed="false"]{opacity:.45}
+.chip i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.chip:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--water);outline-offset:2px}
+select{font:inherit;padding:4px 6px;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:4px}
+.legend-note{color:var(--muted);font-size:.8rem;line-height:1.5}
+.leaflet-container{font-family:var(--body);background:var(--bg)}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--surface);color:var(--fg)}
+.leaflet-popup-content{margin:12px 14px;font-size:.85rem;line-height:1.5}
+.leaflet-bar a{background:var(--surface);color:var(--fg);border-bottom-color:var(--line)}
+.pop-bars{display:grid;grid-template-columns:3.2em 1fr 5.5em;gap:3px 8px;align-items:center;font-family:var(--mono);font-size:.75rem;margin:6px 0}
+.tank-ico{width:9px;height:9px;transform:rotate(45deg);background:var(--tank);border:1.5px solid var(--surface);box-sizing:border-box}
+.pop-bars .bar{height:8px;background:var(--water);border-radius:1px}
+/* charts & tables */
+.fig{border:1px solid var(--line);background:var(--surface);padding:16px;display:grid;gap:10px;min-width:0}
+.fig img{display:block;width:100%;height:auto}
+.cap{font-size:.85rem;color:var(--muted);line-height:1.5}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+@media (max-width:820px){.two{grid-template-columns:minmax(0,1fr)}}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.9rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 .75rem var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.num{text-align:right;font-family:var(--mono)}
+.pill{display:inline-block;padding:1px 8px;border-radius:999px;font:500 .75rem var(--mono);border:1px solid currentColor}
+.ok{color:var(--water)} .warn{color:var(--dry)} .no{color:var(--bad)}
+ul.clean{margin:0;padding-left:1.2em;display:grid;gap:6px}
+code{font-family:var(--mono);font-size:.85em;background:var(--bg);border:1px solid var(--line);padding:0 4px;border-radius:3px;overflow-wrap:anywhere}
+svg text{fill:var(--fg);font-family:var(--mono)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.step{border-top:3px solid var(--water);background:var(--surface);padding:12px 14px;display:grid;gap:4px;font-size:.9rem}
+.step b{font-family:var(--display);font-stretch:85%;font-size:1rem}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">德州 Hamilton County · NAIP 0.6 m 航空影像 · 初步模型</div>
+  <h1>牧场饮水池塘检测与三年水情</h1>
+  <p class="lede">两类牧场饮水点分别用两套模型检测。土坝池塘（stock pond）用公开的 NAIP 四波段影像（含近红外）做分割，并在 2018、2020、2022 三期影像上逐个判断"还有没有水"。直径 2–12 m 的圆形人工水槽和储水罐在 NAIP 上太小，改用 Google 卫星图（约 0.25 m）检测，再用 0.13 m 切片区分真水槽与草捆、喂料架。当前结果来自自监督预训练的 ViT-L 模型（见下文"自监督学习升级"）。</p>
+  <div class="stats">
+    <div class="stat"><b>7,707</b><span>个池塘足迹（三期检测的并集，县界内）</span></div>
+    <div class="stat"><b>6,735 → 3,072</b><span>有水池塘数，2018 秋 → 2022 夏</span></div>
+    <div class="stat"><b>0.845 · 0.905</b><span>池塘检测目标 F1 · 像素 IoU（测试区；原模型 0.833 · 0.829）</span></div>
+    <div class="stat"><b>3,026</b><span>个圆形水槽/储水罐（全县）；测试区召回 78%，精度 60–87%</span></div>
+  </div>
+</header>
+
+<section>
+  <div class="col" style="display:grid;gap:8px">
+    <h2>全县饮水点分布图</h2>
+    <p>圆点是池塘足迹，颜色表示 2018→2022 的水情变化；菱形是圆形水槽/储水罐。点击任一点查看详情，并可跳转 Google 卫星图核对。底图是 2022 年 NAIP 的 15 m 缩略图，单个池塘和水槽在底图上看不清，以点位为准。</p>
+  </div>
+  <div class="mapbox">
+    <div id="map" role="region" aria-label="Hamilton County 池塘分布交互地图"></div>
+    <div class="panel">
+      <div style="display:grid;gap:8px">
+        <h3>水情类别</h3>
+        <div class="chips" id="chips"></div>
+        <p class="legend-note" id="countNote"></p>
+      </div>
+      <div style="display:grid;gap:6px">
+        <label for="sizeSel"><h3>池塘大小</h3></label>
+        <select id="sizeSel">
+          <option value="0">全部</option>
+          <option value="500">≥ 500 m²</option>
+          <option value="2000">≥ 2,000 m²</option>
+          <option value="10000">≥ 1 公顷</option>
+        </select>
+      </div>
+      <p class="legend-note">"有水"= 当年检测到的水面 ≥ 该池塘三年最大水面的 10%（且 ≥ 10 m²）。2022 年召回约 81%，所以"2022 年已干"里会混入少量漏检的有水池塘。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="col" style="display:grid;gap:8px">
+    <h2>三期水情：小池塘最先干</h2>
+    <p>2018 年 10–11 月影像拍摄于德州中部罕见的多雨秋季，2022 年 7 月则是严重干旱。全县池塘开放水面从 12.0 km² 降到 4.6 km²。干涸高度依赖池塘大小：小于 500 m² 的池塘在 2022 年只有 18% 还有水，1 公顷以上的仍有 83%。对牧场主来说，这意味着最先需要补水或转场的，就是那些小型土池。</p>
+  </div>
+  <div class="two">
+    <div class="fig">
+      <h3>各年有水池塘比例（按池塘大小）</h3>
+      <div id="chartSize" style="overflow-x:auto"></div>
+      <p class="cap">分母为该大小档的全部池塘足迹（&lt;500 m²: 2,615；500–2k: 3,083；2k–10k: 1,805；&gt;10k: 204）。</p>
+    </div>
+    <div class="fig">
+      <h3>2018 → 2022 变化类别</h3>
+      <div id="chartTrend" style="overflow-x:auto"></div>
+      <p class="cap">"新蓄水/重新蓄水"多数是 2018 年漏检或新挖的池塘；"间歇"是三年中有水年份不连续的。</p>
+    </div>
+  </div>
+  <div class="fig">
+    <img src="fig_2020_vs_2022.jpg" alt="24 个仅在 2020 年检出的目标：每组依次为 2020 RGB、2020 近红外假彩色、2022 RGB、2022 近红外假彩色" loading="lazy">
+    <p class="cap">随机抽取 24 个"2020 年有水、2022 年没检出"的目标（每组：2020 RGB | 2020 CIR | 2022 RGB | 2022 CIR）。约 20 个确实是 2020 年有水、2022 年见底的池塘；#3、#10 是公路误检，#5、#16 是很小的阴影斑。</p>
+  </div>
+</section>
+
+<section id="ssl">
+  <div class="col" style="display:grid;gap:8px">
+    <h2>自监督学习升级</h2>
+    <p>本页的地图和统计已改用自监督模型生成。做法是先不用任何标签学习遥感特征，再用少量标签微调：</p>
+    <ul class="clean">
+      <li><b>基础模型</b>：DINOv3-sat ViT-L/16（3 亿参数），在 4.93 亿张卫星图上自监督训练。</li>
+      <li><b>本县领域自监督</b>：在全县未标注的 NAIP（3 年，含近红外）和 Google 0.25 m 影像上，用 DINO + iBOT + Gram anchoring 继续训练；NAIP 版自己学会了使用近红外波段。</li>
+      <li><b>下游模型</b>：池塘用 ViT-L 分割（输入放大 2 倍以保住小池塘）并与原 U-Net 集成；水槽用 ViT 稠密检测器加 ViT 类型分类器。</li>
+    </ul>
+  </div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>测试区</th><th style="text-align:right">原模型</th><th style="text-align:right">自监督模型</th></tr></thead>
+      <tbody>
+        <tr><td>池塘：像素 IoU</td><td class="num">0.829</td><td class="num">0.905</td></tr>
+        <tr><td>池塘：目标 F1（精度 / 召回）</td><td class="num">0.833（0.915 / 0.764）</td><td class="num">0.845（0.943 / 0.766）</td></tr>
+        <tr><td>池塘：只用 10% 训练影像时的 F1</td><td class="num">0.816</td><td class="num">0.831</td></tr>
+        <tr><td>水槽：召回（18 个参照）/ 精度</td><td class="num">72% / 67–85%</td><td class="num">78% / 60–87%</td></tr>
+        <tr><td>水槽：测试区估计真实设施数</td><td class="num">约 490–630</td><td class="num">约 650–950</td></tr>
+        <tr><td>水槽分类：约 90 个标注时储水 F1</td><td class="num">0.61</td><td class="num">0.76</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="two">
+    <div class="fig"><h3>小池塘召回</h3><img src="s2_pond_size_recall.png" alt="按池塘大小分组的召回柱状图，比较 U-Net 与三种 ViT 模型" loading="lazy">
+      <p class="cap">ViT 在 1× 时漏掉小池塘（一个 patch 就有 92 m²）；放大 2 倍后与 CNN 相当，同时边界更准、误检更少。</p></div>
+    <div class="fig"><h3>水槽检测：精度–召回</h3><img src="s4_tank_pr.png" alt="测试区水槽检测的精度召回图，比较 YOLO 原方案与两个自监督系统" loading="lazy">
+      <p class="cap">同等召回下精度相当或更高、检出更多设施；也可把召回提高到 89%。误差线为严格–宽松精度区间。</p></div>
+  </div>
+  <div class="fig"><h3>标注少时优势最大</h3><img src="s3_tank_cls_label_eff.png" alt="水槽类型分类的储水 F1 随标注量变化的折线图" loading="lazy" style="max-width:640px">
+    <p class="cap">水槽类型分类，5 折交叉验证。约 90 个标注时，自监督特征比 ImageNet ResNet18 高 0.13–0.15。</p></div>
+  <p class="cap col">本县领域自监督相对公开 DINOv3-sat 的提升是小幅的：全量数据下池塘 1× +0.023 F1、2× 无提升，水槽分类 +0.018 F1，水槽检测无可测量提升；在只有 10% 训练影像时提升最明显。完整对比见 PDF 报告第 7 节。</p>
+</section>
+
+<section>
+  <div class="col" style="display:grid;gap:8px">
+    <h2>方法</h2>
+    <p>没有现成的人工标注，所以用公开数据自动造"弱标签"，再用深度模型去学比规则更稳健的判别。关键点是让模型明确见到公路、屋顶、深色翻耕地这些"像水但不是水"的负样本。</p>
+  </div>
+  <div class="steps">
+    <div class="step"><span class="eyebrow">数据</span><b>NAIP 2018/2020/2022</b><span>0.6 m，RGB + 近红外，77 幅四分幅覆盖全县，约 100 GB。来自 Microsoft Planetary Computer。</span></div>
+    <div class="step"><span class="eyebrow">弱标签</span><b>NWI 池塘 + 光谱水体</b><span>NWI 的 5,497 个池塘多边形常偏 20–50 m 且很多已干，只作位置先验；真正的水面由 NIR&lt;0.8R 且 NIR&lt;0.8G 提取。</span></div>
+    <div class="step"><span class="eyebrow">负样本</span><b>道路、建筑、农田</b><span>TIGER 道路与微软建筑轮廓作为困难负样本单独采样；狭长或低 NDWI 的类水体标为背景。</span></div>
+    <div class="step"><span class="eyebrow">模型</span><b>U-Net · EfficientNet-B4</b><span>4 波段输入，正样本 / 困难负样本 / 随机 = 45/25/30 采样。另训练了仅 RGB 版本，可用于 Google/Esri 这类底图。</span></div>
+    <div class="step"><span class="eyebrow">跨年份</span><b>辐射匹配</b><span>2018、2020 影像比 2022 暗约 25%，推理前把每幅影像的波段均值/方差匹配到 2022，否则深色清水会大量漏检。</span></div>
+    <div class="step"><span class="eyebrow">水槽 · 第一阶段</span><b>YOLO11 · Google z19</b><span>约 0.25 m 影像，人工标注 203 个水槽框，两轮主动学习补充困难负样本（牛群、灌木、草捆）。全县约 52 万张瓦片。</span></div>
+    <div class="step"><span class="eyebrow">水槽 · 第二阶段</span><b>z20 类型分类</b><span>在约 0.13 m 切片上把候选分为储水设施、草捆喂料架、圆草捆、其他；443 个人工标注，交叉验证储水类精度 0.90、召回 0.85。</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="col" style="display:grid;gap:8px">
+    <h2>精度</h2>
+    <p>测试区是县中南部 16 幅连续影像（约 650 km²），完全不参与训练。先和弱标签比，再人工逐个看图核验。</p>
+  </div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>方法（测试区，NAIP 2022）</th><th style="text-align:right">目标精度</th><th style="text-align:right">目标召回</th><th style="text-align:right">F1</th><th style="text-align:right">像素 IoU</th></tr></thead>
+      <tbody>
+        <tr><td>纯光谱规则基线</td><td class="num">0.12</td><td class="num">1.00*</td><td class="num">0.21</td><td class="num">0.24</td></tr>
+        <tr><td>U-Net v1（未显式教负样本）</td><td class="num">0.49</td><td class="num">0.75</td><td class="num">0.59</td><td class="num">0.46</td></tr>
+        <tr><td><b>U-Net v2（最终模型）</b></td><td class="num"><b>0.92</b></td><td class="num"><b>0.76</b></td><td class="num"><b>0.83</b></td><td class="num"><b>0.83</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="cap col">与弱标签对比，目标 ≥ 25 m²；v1 行按 v1 自身的弱标签计算。*规则基线召回为 1 是因为弱标签本身就由这条规则生成。弱标签不完整，所以下面的人工核验更可信。</p>
+  <div class="two">
+    <div class="fig">
+      <h3>人工核验精度 <span class="pill ok">88% 严格 · 93% 宽松</span></h3>
+      <img src="fig_precision.jpg" alt="30 个随机检出目标的核验图：NAIP RGB 加洋红轮廓、NAIP 近红外假彩色、Esri 2021 高分影像" loading="lazy">
+      <p class="cap">60 个随机检出中 53 个真实水体、4 个误检（3 个道路/铁路、1 个深色屋顶）、3 个存疑。每组：NAIP RGB + 检测轮廓 | NAIP CIR | Esri 2021。</p>
+    </div>
+    <div class="fig">
+      <h3>人工核验召回 <span class="pill ok">81%</span></h3>
+      <img src="fig_recall.jpg" alt="30 个随机 NWI 池塘的核验图：黄色为 NWI 多边形，洋红为模型检出" loading="lazy">
+      <p class="cap">60 个随机 NWI 池塘：18 个在 2022 年 7 月已干；42 个有水，检出 34 个。漏检主要是树荫下很小的水面、满池绿藻或水草覆盖的池塘。黄 = NWI，洋红 = 模型。</p>
+    </div>
+  </div>
+  <div class="fig">
+    <h3>小而圆的水面多是"快干的池塘"</h3>
+    <img src="fig_small_round.jpg" alt="28 个面积不超过 200 平方米的圆形水面检出" loading="lazy">
+    <p class="cap"><code>small_round_water</code> 类（≤ 200 m²，接近圆形）大多是正在干涸的土池中剩下的一小片水，这正是监测中最该预警的状态；少数是人工圆形水槽（如 #25，Esri 上可见圆环），以及住宅旁的游泳池（#12、#23，已加 <code>possible_pool</code> 标记）。</p>
+  </div>
+</section>
+
+<section id="tanks">
+  <div class="col" style="display:grid;gap:8px">
+    <h2>圆形水槽与储水罐</h2>
+    <p class="cap">本节记录的是第一版（YOLO11s + ResNet18）方案；地图上的水槽图层已换成自监督模型的结果（3,026 个，见"自监督学习升级"）。</p>
+    <p>牧场的圆形水槽（镀锌钢槽、水泥槽、塑料桶）和储水罐直径多在 2–12 m。NAIP 0.6 m 下只有几个像素，第一版基于 NAIP 的检测器在全县精度只有 12–33%。换用 Google 卫星图（z19 约 0.25 m）后，水槽清晰可见，可以直接做目标检测。</p>
+    <p>但高分辨率下出现了新的混淆：冬季喂牛的<b>圆形草捆</b>（约 2 m 的浅色圆盘）和<b>草捆喂料架</b>（金属圆环，周围同样有牛踩出的裸地）与水槽外观非常接近。单靠检测器，高置信度检出里真正的储水设施只有约 29%。所以加了第二阶段：在 z20（约 0.13 m）切片上判断内部是水面/金属罐体，还是草料。</p>
+  </div>
+  <div class="fig">
+    <h3>四类候选对照（z20，约 16 m 视窗）</h3>
+    <img src="fig_tank_classes.jpg" alt="四行候选切片：第一行储水罐和水槽，第二行草捆喂料架，第三行圆草捆，第四行灌木、牛群、车辆等" loading="lazy">
+    <p class="cap">自上而下：储水罐/水槽（内部暗色水面或金属罐体，常有阴影）；草捆喂料架（暗色圆环、浅色草料内部，成片踩踏斑）；圆草捆（均匀浅色圆盘，周围无踩踏）；其他（灌木、牛群、车辆、棚子）。</p>
+  </div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>测试区评估（约 650 km²，不参与训练）</th><th style="text-align:right">召回</th><th style="text-align:right">精度（严格–宽松）</th><th style="text-align:right">测试区检出数</th></tr></thead>
+      <tbody>
+        <tr><td>NAIP 0.6 m 斑点 + CNN（第一版）</td><td class="num">—</td><td class="num">12–33%</td><td class="num">—</td></tr>
+        <tr><td>Google z19 YOLO，单阶段，置信度 ≥ 0.35</td><td class="num">60%</td><td class="num">29%*</td><td class="num">1,025</td></tr>
+        <tr><td><b>YOLO + z20 类型分类（第一版），置信度 ≥ 0.2、储水概率 ≥ 0.8</b></td><td class="num"><b>72%</b></td><td class="num"><b>67–85%</b></td><td class="num"><b>741</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="cap col">召回参照集：从测试区独立挑出、并在 z20 下确认的 18 个储水设施。精度：从最终检出中随机抽样，在 z20 下逐个核验，"宽松"把看不清的计为正确。*单阶段一栏是在 z20 下复核同一批高分检出得到的：48 个中 14 个是储水设施，22 个是草捆，10 个是喂料架。样本量都不大，数值的不确定性约 ±12 个百分点。</p>
+  <div class="two">
+    <div class="fig">
+      <h3>测试区确认的储水设施</h3>
+      <img src="fig_tanks_confirmed.jpg" alt="16 个测试区内经人工确认的圆形水槽和储水罐" loading="lazy">
+      <p class="cap">从最终检出的随机样本里人工确认的 16 个：牛道汇聚的圆形水槽、带水的水泥槽、金属和塑料储水罐。</p>
+    </div>
+    <div class="fig">
+      <h3>牧场尺度示例（1.2 km × 1.2 km）</h3>
+      <img src="fig_ranch_example.jpg" alt="一块牧场的 Google 卫星图，青色轮廓为池塘，洋红圆圈为检测到的储水设施" loading="lazy">
+      <p class="cap">测试区内一块牧场：青色为 2022 年 NAIP 检出的池塘水面，洋红为两阶段模型判定的水槽/储水罐。</p>
+    </div>
+  </div>
+  <div class="col" style="display:grid;gap:8px">
+    <h3>局限与下一步</h3>
+    <ul class="clean">
+      <li>Google 底图的拍摄日期不统一、也不公开，只能用于"有没有这个设施"，不能判断某一天槽里有没有水；而且其使用条款限制批量下载，正式项目建议改用公开的高分正射影像（如 TxGIO StratMap，需确认本县覆盖与年份）或无人机。</li>
+      <li>漏检的 28% 主要是被树荫遮挡、或位于牲畜棚院里的水槽；误检主要是车辆、拖车和棚子。在 z20 分类中再补 100–200 个此类样本即可改善。</li>
+      <li>池塘部分：请牧场主提供 ranch 边界，即可输出每个牧场的池塘和水槽清单及逐年水情；再标注约 200 个本地池塘可提升绿藻池塘的召回。</li>
+      <li>长期监测：NAIP 每两年一次，频率不够；大池塘可迁移到 Sentinel-2（10 m，5 天）或 PlanetScope（3 m，每天）做高频跟踪。水槽是否有水需要 ≤ 0.3 m 的定期影像或地面传感器。</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="col" style="display:grid;gap:8px">
+    <h2>输出文件</h2>
+    <p>路径相对于项目根目录，坐标系 EPSG:26914（GeoJSON 为 WGS84）。</p>
+  </div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>文件</th><th>内容</th></tr></thead>
+      <tbody>
+        <tr><td><code>outputs/vector/water_sources_2022_hamilton.geojson</code></td><td>2022 年县界内全部水体检出（4,974 个），含面积、圆度、类别、误检标记、经纬度</td></tr>
+        <tr><td><code>outputs/vector/water_sources_{2018,2020,2022}.gpkg</code></td><td>三期全部检出（覆盖范围略大于县界）</td></tr>
+        <tr><td><code>outputs/pond_inventory_multiyear_ssl_hamilton.csv</code></td><td>7,707 个池塘足迹的逐年水面面积与有水/干涸状态（自监督集成模型，推荐）</td></tr>
+        <tr><td><code>outputs/vector/round_tanks_hamilton_ssl.geojson</code></td><td>全县 3,026 个水槽/储水罐（自监督模型，推荐）</td></tr>
+        <tr><td><code>outputs/pond_inventory_multiyear_hamilton.csv</code></td><td>原模型的池塘清单（7,915 个，供对照）</td></tr>
+        <tr><td><code>outputs/vector/round_tanks_county_v3_typed.gpkg</code></td><td>全县圆形水槽/储水罐候选，含检测置信度、四类概率；<code>water_source = true</code> 为最终结果</td></tr>
+        <tr><td><code>runs/yolo/tank_v3/weights/best.pt</code> · <code>runs/tank_type_cls.pt</code></td><td>水槽检测器（YOLO11s，Google z19）；类型分类器（ResNet18，Google z20）</td></tr>
+        <tr><td><code>data/manual/</code></td><td>全部人工标注：水槽框、z20 类型标签、核验记录</td></tr>
+        <tr><td><code>outputs/prob/{year}/*.tif</code></td><td>逐像素水体概率图（0–255）</td></tr>
+        <tr><td><code>outputs/eval/</code></td><td>弱标签评估与全部人工核验记录</td></tr>
+        <tr><td><code>runs/unet_rgbn_v2/best.pt</code> · <code>runs/unet_rgb_v2/best.pt</code></td><td>四波段模型；仅 RGB 模型（未单独评估）</td></tr>
+        <tr><td><code>README.md</code>、<code>scripts/</code></td><td>复现流程，01–10 按顺序运行</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>数据：USDA NAIP（Microsoft Planetary Computer）、USFWS NWI、Census TIGER、Microsoft Building Footprints、TWDB 井位数据库、Google 卫星图（圆形水槽检测）、Esri World Imagery（目视核验）。分析日期 2026-10-19 至 10-20。</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const TREND = {
+  persistent:{label:"三年都有水",v:"--water"},
+  dried_by_2022:{label:"2022 年已干",v:"--dry"},
+  intermittent:{label:"间歇",v:"--mixed"},
+  new_or_refilled:{label:"新蓄水/重新蓄水",v:"--new"}
+};
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const fmt = n => n.toLocaleString("en-US");
+
+/* charts from the county summary */
+const WET = {"<500":[0.751,0.307,0.176],"500–2k":[0.926,0.744,0.434],"2k–10k":[0.96,0.859,0.612],">10k":[0.897,0.887,0.833]};
+const TRENDN = {persistent:2351,dried_by_2022:4186,intermittent:647,new_or_refilled:523};
+function drawSize(){
+  const W=520,H=250,L=44,B=34,T=14,R=8, groups=Object.keys(WET), years=["2018","2020","2022"];
+  const op=[0.45,0.7,1], gw=(W-L-R)/groups.length, bw=gw/4.2, y=v=>T+(H-T-B)*(1-v);
+  let s=`<svg viewBox="0 0 ${W} ${H}" width="100%" style="min-width:360px" role="img" aria-label="各大小档池塘在三年中有水的比例">`;
+  [0,.25,.5,.75,1].forEach(v=>{s+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="${css('--line')}" stroke-width="1"/><text x="${L-6}" y="${y(v)+4}" font-size="11" text-anchor="end">${v*100}%</text>`});
+  groups.forEach((g,i)=>{ const x0=L+i*gw+gw*0.12;
+    WET[g].forEach((v,j)=>{ s+=`<rect x="${x0+j*bw}" y="${y(v)}" width="${bw-3}" height="${y(0)-y(v)}" fill="${css('--water')}" fill-opacity="${op[j]}"><title>${g} m² · ${years[j]}: ${(v*100).toFixed(0)}%</title></rect>`;
+      if(j===2) s+=`<text x="${x0+j*bw+(bw-3)/2}" y="${y(v)-4}" font-size="10" text-anchor="middle">${Math.round(v*100)}%</text>`;});
+    s+=`<text x="${L+i*gw+gw/2}" y="${H-12}" font-size="11" text-anchor="middle">${g} m²</text>`;});
+  s+=`</svg><div class="chips" aria-hidden="true" style="margin-top:4px">${years.map((yy,j)=>`<span class="chip" style="cursor:default"><i style="background:${css('--water')};opacity:${op[j]}"></i>${yy}</span>`).join("")}</div>`;
+  document.getElementById("chartSize").innerHTML=s;
+}
+function drawTrend(){
+  const W=520,rowH=40,L=150,R=70, keys=Object.keys(TRENDN), max=Math.max(...Object.values(TRENDN)), H=keys.length*rowH+10;
+  let s=`<svg viewBox="0 0 ${W} ${H}" width="100%" style="min-width:360px" role="img" aria-label="2018 到 2022 池塘水情变化类别数量">`;
+  keys.forEach((k,i)=>{ const w=(W-L-R)*TRENDN[k]/max, yy=8+i*rowH;
+    s+=`<text x="${L-10}" y="${yy+19}" font-size="12" text-anchor="end">${TREND[k].label}</text><rect x="${L}" y="${yy+6}" width="${w}" height="20" fill="${css(TREND[k].v)}"/><text x="${L+w+6}" y="${yy+20}" font-size="12">${fmt(TRENDN[k])}</text>`;});
+  document.getElementById("chartTrend").innerHTML=s+"</svg>";
+}
+
+/* map */
+let map, layer, tlayer, PTS=[], TANKS=[], tanksOn=true, on=new Set(Object.keys(TREND));
+function buildChips(){
+  const box=document.getElementById("chips"); box.innerHTML="";
+  Object.entries(TREND).forEach(([k,t])=>{
+    const b=document.createElement("button"); b.className="chip"; b.type="button"; b.id="chip-"+k;
+    b.setAttribute("aria-pressed", on.has(k)?"true":"false");
+    b.innerHTML=`<i style="background:${css(t.v)}"></i>${t.label}`;
+    b.onclick=()=>{ on.has(k)?on.delete(k):on.add(k); b.setAttribute("aria-pressed", on.has(k)?"true":"false"); render(); };
+    box.appendChild(b);
+  });
+  const t=document.createElement("button"); t.className="chip"; t.type="button"; t.id="chip-tanks";
+  t.setAttribute("aria-pressed", tanksOn?"true":"false");
+  t.innerHTML=`<i style="background:${css('--tank')};border-radius:1px;transform:rotate(45deg)"></i>圆形水槽/储水罐`;
+  t.onclick=()=>{ tanksOn=!tanksOn; t.setAttribute("aria-pressed", tanksOn?"true":"false"); render(); };
+  box.appendChild(t);
+}
+function tankPopup(p){
+  const [lat,lon,conf,pw,diam]=p;
+  return `<b>圆形水槽/储水罐</b><br>检测置信度 ${conf.toFixed(2)} · 储水概率 ${pw.toFixed(2)}<br>估计直径约 ${diam.toFixed(1)} m<br>`+
+    `<span style="font-family:var(--mono);font-size:.75rem">${lat.toFixed(5)}, ${lon.toFixed(5)}</span><br>`+
+    `<a href="https://www.google.com/maps/@${lat},${lon},80m/data=!3m1!1e3" target="_blank" rel="noopener">在 Google 卫星图中查看</a>`;
+}
+function popup(p){
+  const [lat,lon,area,w18,w20,w22,trend,id]=p, mx=Math.max(w18,w20,w22,1);
+  const row=(y,v)=>`<span>${y}</span><span class="bar" style="width:${Math.max(2,100*v/mx)}%;opacity:${v?1:.25}"></span><span style="text-align:right">${fmt(v)} m²</span>`;
+  return `<b>池塘 #${id}</b> · ${TREND[trend].label}<br>足迹面积 ${fmt(area)} m²<div class="pop-bars">${row("2018",w18)}${row("2020",w20)}${row("2022",w22)}</div>`+
+    `<span style="font-family:var(--mono);font-size:.75rem">${lat.toFixed(5)}, ${lon.toFixed(5)}</span><br>`+
+    `<a href="https://www.google.com/maps/@${lat},${lon},250m/data=!3m1!1e3" target="_blank" rel="noopener">在 Google 卫星图中查看</a>`;
+}
+function render(){
+  if(!map) return;
+  if(layer) layer.remove();
+  const minA=+document.getElementById("sizeSel").value, rend=L.canvas({padding:.5});
+  layer=L.layerGroup(); let n=0;
+  PTS.forEach(p=>{ if(!on.has(p[6])||p[2]<minA) return; n++;
+    L.circleMarker([p[0],p[1]],{renderer:rend,radius:Math.max(2.5,Math.min(9,Math.sqrt(p[2])/14)),color:css(TREND[p[6]].v),weight:1,fillOpacity:.75})
+     .bindPopup(()=>popup(p)).addTo(layer);});
+  layer.addTo(map);
+  if(tlayer) tlayer.remove();
+  tlayer=L.layerGroup();
+  if(tanksOn){ const ico=L.divIcon({className:"",html:'<div class="tank-ico"></div>',iconSize:[9,9]});
+    TANKS.forEach(p=>L.marker([p[0],p[1]],{icon:ico,keyboard:false}).bindPopup(()=>tankPopup(p)).addTo(tlayer)); }
+  tlayer.addTo(map);
+  document.getElementById("countNote").textContent=`当前显示 ${fmt(n)} / ${fmt(PTS.length)} 个池塘`+(tanksOn?`，${fmt(TANKS.length)} 个水槽/储水罐`:"");
+}
+async function initMap(){
+  map=L.map("map",{preferCanvas:true,zoomSnap:.25,attributionControl:false});
+  const [county,bounds,pts,tanks]=await Promise.all([fetch("county.json").then(r=>r.json()),fetch("overview_bounds.json").then(r=>r.json()),fetch("ponds.json").then(r=>r.json()),fetch("tanks.json").then(r=>r.json())]);
+  TANKS=tanks;
+  L.imageOverlay("naip2022_overview.jpg",bounds.bounds,{opacity:.85}).addTo(map);
+  const poly=L.polygon(county,{color:css("--fg"),weight:1.5,fill:false,dashArray:"4 4"}).addTo(map);
+  map.fitBounds(poly.getBounds(),{padding:[10,10]});
+  PTS=pts; render();
+}
+document.getElementById("sizeSel").addEventListener("change",render);
+buildChips(); drawSize(); drawTrend();
+initMap().catch(e=>{document.getElementById("map").innerHTML=`<p style="padding:16px">地图数据加载失败：${e.message}。请刷新页面重试。</p>`;});
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{buildChips();drawSize();drawTrend();render();});
+</script>

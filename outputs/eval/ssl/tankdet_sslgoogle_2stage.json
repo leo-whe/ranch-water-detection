@@ -1,0 +1,30 @@
+{
+ "0.5": {
+  "recall": 0.833,
+  "n_test": 1243,
+  "n_sample": 48,
+  "precision_strict": 0.438,
+  "precision_lenient": 0.875
+ },
+ "0.7": {
+  "recall": 0.833,
+  "n_test": 1034,
+  "n_sample": 41,
+  "precision_strict": 0.488,
+  "precision_lenient": 0.902
+ },
+ "0.8": {
+  "recall": 0.722,
+  "n_test": 907,
+  "n_sample": 37,
+  "precision_strict": 0.486,
+  "precision_lenient": 0.892
+ },
+ "0.9": {
+  "recall": 0.722,
+  "n_test": 710,
+  "n_sample": 28,
+  "precision_strict": 0.536,
+  "precision_lenient": 0.857
+ }
+}

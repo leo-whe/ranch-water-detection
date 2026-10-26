@@ -1,0 +1,11 @@
+{
+ "name": "sslnaip_rgbn",
+ "weak_label": {
+  "obj_precision": 0.9674935842600513,
+  "obj_recall": 0.6969332531569453,
+  "obj_F1": 0.8102229980060104,
+  "pixel_IoU": 0.8830402813544233
+ },
+ "nwi_recall_auto": 0.7380952380952381,
+ "n_objects_test_area": 1441
+}

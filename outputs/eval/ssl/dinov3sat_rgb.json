@@ -1,0 +1,11 @@
+{
+ "name": "dinov3sat_rgb",
+ "weak_label": {
+  "obj_precision": 0.9014336917562724,
+  "obj_recall": 0.6482260974143115,
+  "obj_F1": 0.7541433909151031,
+  "pixel_IoU": 0.8053710010953853
+ },
+ "nwi_recall_auto": 0.8095238095238095,
+ "n_objects_test_area": 1401
+}

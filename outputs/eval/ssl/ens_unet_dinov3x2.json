@@ -1,0 +1,11 @@
+{
+ "name": "ens_unet_dinov3x2",
+ "weak_label": {
+  "obj_precision": 0.9425287356321839,
+  "obj_recall": 0.7660853878532772,
+  "obj_F1": 0.8451966796653776,
+  "pixel_IoU": 0.9046700002418973
+ },
+ "nwi_recall_auto": 0.8095238095238095,
+ "n_objects_test_area": 1747
+}

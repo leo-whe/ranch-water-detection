@@ -1,0 +1,43 @@
+{
+ "reference": {
+  "tank": 15,
+  "probable": 6
+ },
+ "recall": {
+  "0.5": {
+   "recall_sure": 0.067,
+   "recall_all": 0.095,
+   "n_detections": 125
+  },
+  "0.45": {
+   "recall_sure": 0.133,
+   "recall_all": 0.143,
+   "n_detections": 344
+  },
+  "0.4": {
+   "recall_sure": 0.333,
+   "recall_all": 0.286,
+   "n_detections": 640
+  },
+  "0.35": {
+   "recall_sure": 0.6,
+   "recall_all": 0.476,
+   "n_detections": 1025
+  },
+  "0.3": {
+   "recall_sure": 0.667,
+   "recall_all": 0.524,
+   "n_detections": 1574
+  },
+  "0.25": {
+   "recall_sure": 0.8,
+   "recall_all": 0.619,
+   "n_detections": 2290
+  },
+  "0.2": {
+   "recall_sure": 0.8,
+   "recall_all": 0.619,
+   "n_detections": 3304
+  }
+ }
+}

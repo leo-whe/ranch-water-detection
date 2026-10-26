@@ -1,0 +1,31 @@
+# Only the shipped checkpoints under weights/ are tracked.
+*.pt
+!weights/*.pt
+
+# Imagery, tile caches, training chips and raw downloads live outside version control.
+data/naip/
+data/webtiles/
+data/raw_twdb/
+data/vector/
+data/labels*/
+data/tank_chips/
+data/tankdet*/
+data/yolo_tanks/
+data/gmap_test/
+data/*.jpg
+
+# Training runs, logs and bulk rasters / vectors
+runs/
+logs/
+viz/
+outputs/prob*/
+outputs/vector/*.gpkg
+outputs/vector/water_sources_*
+outputs/vector/*_shards/
+outputs/eval/**/*.gpkg
+outputs/eval/**/*.jpg
+outputs/eval/**/*.png
+
+__pycache__/
+*.py[cod]
+*.bak

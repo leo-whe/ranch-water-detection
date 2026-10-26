@@ -1,0 +1,64 @@
+{
+ "recall_grid": {
+  "conf>=0.2,p_water>=0.0": {
+   "recall": 0.722,
+   "n_dets_test_area": 3304
+  },
+  "conf>=0.2,p_water>=0.5": {
+   "recall": 0.722,
+   "n_dets_test_area": 1002
+  },
+  "conf>=0.2,p_water>=0.8": {
+   "recall": 0.722,
+   "n_dets_test_area": 741
+  },
+  "conf>=0.25,p_water>=0.0": {
+   "recall": 0.722,
+   "n_dets_test_area": 2290
+  },
+  "conf>=0.25,p_water>=0.5": {
+   "recall": 0.722,
+   "n_dets_test_area": 786
+  },
+  "conf>=0.25,p_water>=0.8": {
+   "recall": 0.722,
+   "n_dets_test_area": 598
+  },
+  "conf>=0.3,p_water>=0.0": {
+   "recall": 0.611,
+   "n_dets_test_area": 1574
+  },
+  "conf>=0.3,p_water>=0.5": {
+   "recall": 0.611,
+   "n_dets_test_area": 590
+  },
+  "conf>=0.3,p_water>=0.8": {
+   "recall": 0.611,
+   "n_dets_test_area": 462
+  }
+ },
+ "operating_points": {
+  "conf>=0.2,p_water>=0.5": {
+   "precision_strict": 0.532,
+   "precision_lenient": 0.723,
+   "n_sample": 47,
+   "recall": 0.722,
+   "n_dets_test_area": 1002
+  },
+  "conf>=0.2,p_water>=0.8": {
+   "precision_strict": 0.667,
+   "precision_lenient": 0.848,
+   "n_sample": 33,
+   "recall": 0.722,
+   "n_dets_test_area": 741
+  },
+  "conf>=0.3,p_water>=0.8": {
+   "precision_strict": 0.727,
+   "precision_lenient": 0.818,
+   "n_sample": 22,
+   "recall": 0.611,
+   "n_dets_test_area": 462
+  }
+ },
+ "n_reference_water": 18
+}

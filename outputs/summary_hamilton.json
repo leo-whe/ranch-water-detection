@@ -1,0 +1,109 @@
+{
+ "2018": {
+  "all": 13213,
+  "by_class": {
+   "pond": 10921,
+   "creek_or_river": 2191,
+   "small_round_water": 101
+  },
+  "flagged_fp": 99
+ },
+ "2020": {
+  "all": 7604,
+  "by_class": {
+   "pond": 6501,
+   "creek_or_river": 962,
+   "small_round_water": 141
+  },
+  "flagged_fp": 112
+ },
+ "2022": {
+  "all": 4974,
+  "by_class": {
+   "pond": 4126,
+   "creek_or_river": 621,
+   "small_round_water": 227
+  },
+  "flagged_fp": 133
+ },
+ "inventory": {
+  "footprints": 7915,
+  "chain_like": 0,
+  "trend": {
+   "dried_by_2022": 4161,
+   "persistent": 2330,
+   "intermittent": 799,
+   "new_or_refilled": 625
+  },
+  "wet": {
+   "2018": 6688,
+   "2020": 4893,
+   "2022": 3152
+  },
+  "water_km2": {
+   "2018": 10.61,
+   "2020": 7.92,
+   "2022": 4.59
+  },
+  "size_bins": {
+   "<500": 2860,
+   "500-2k": 3099,
+   "2k-10k": 1757,
+   ">10k": 199
+  },
+  "wet_by_size": {
+   "2018": {
+    "<500": 0.731,
+    "500-2k": 0.903,
+    "2k-10k": 0.931,
+    ">10k": 0.814
+   },
+   "2020": {
+    "<500": 0.305,
+    "500-2k": 0.75,
+    "2k-10k": 0.867,
+    ">10k": 0.884
+   },
+   "2022": {
+    "<500": 0.171,
+    "500-2k": 0.445,
+    "2k-10k": 0.638,
+    ">10k": 0.819
+   }
+  }
+ },
+ "round_tanks": {
+  "final_water_sources": 1849,
+  "candidates_conf_ge_0p2": 9065,
+  "by_type": {
+   "other": 3069,
+   "water": 2740,
+   "bale": 2391,
+   "hay_ring": 865
+  },
+  "diam_m_median": 4.3,
+  "test_area_eval": {
+   "conf>=0.2,p_water>=0.5": {
+    "precision_strict": 0.532,
+    "precision_lenient": 0.723,
+    "n_sample": 47,
+    "recall": 0.722,
+    "n_dets_test_area": 1002
+   },
+   "conf>=0.2,p_water>=0.8": {
+    "precision_strict": 0.667,
+    "precision_lenient": 0.848,
+    "n_sample": 33,
+    "recall": 0.722,
+    "n_dets_test_area": 741
+   },
+   "conf>=0.3,p_water>=0.8": {
+    "precision_strict": 0.727,
+    "precision_lenient": 0.818,
+    "n_sample": 22,
+    "recall": 0.611,
+    "n_dets_test_area": 462
+   }
+  }
+ }
+}

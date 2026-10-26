@@ -1,0 +1,44 @@
+{
+ "ssl": {
+  "footprints": 7707,
+  "trend": {
+   "dried_by_2022": 4186,
+   "persistent": 2351,
+   "intermittent": 647,
+   "new_or_refilled": 523
+  },
+  "wet": {
+   "2018": 6735,
+   "2020": 4829,
+   "2022": 3072
+  },
+  "water_km2": {
+   "2018": 12.0,
+   "2020": 8.25,
+   "2022": 4.61
+  }
+ },
+ "old": {
+  "footprints": 7915,
+  "trend": {
+   "dried_by_2022": 4161,
+   "persistent": 2330,
+   "intermittent": 799,
+   "new_or_refilled": 625
+  },
+  "wet": {
+   "2018": 6688,
+   "2020": 4893,
+   "2022": 3152
+  },
+  "water_km2": {
+   "2018": 10.61,
+   "2020": 7.92,
+   "2022": 4.59
+  }
+ },
+ "tanks": {
+  "n": 3026,
+  "diam_median": 5.1
+ }
+}

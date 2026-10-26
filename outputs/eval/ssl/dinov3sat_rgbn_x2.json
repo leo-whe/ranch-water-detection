@@ -1,0 +1,26 @@
+{
+ "name": "dinov3sat_rgbn_x2",
+ "weak_label": {
+  "obj_precision": 0.9321266968325792,
+  "obj_recall": 0.7642814191220686,
+  "obj_F1": 0.8399006205601242,
+  "pixel_IoU": 0.8976020922475221
+ },
+ "nwi_recall_auto": 0.7619047619047619,
+ "n_objects_test_area": 1749,
+ "manual_precision": {
+  "n": 60,
+  "water": 51,
+  "no": 5,
+  "uncertain": 4,
+  "precision_strict": 0.85,
+  "precision_lenient": 0.917,
+  "errors": [
+   "swimming pool",
+   "house roof/shadow",
+   "swimming pool",
+   "creek shadow",
+   "swimming pool"
+  ]
+ }
+}
